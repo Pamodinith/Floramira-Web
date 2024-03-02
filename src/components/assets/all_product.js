@@ -61,7 +61,7 @@ let all_product = [
     {
         id: 7,
         name: "Boquet 7",
-        category: "Teacher's Day",
+        category: "Anniversary",
         image: p7_img,
         new_price: 5000.0,
         old_price: 4500.0,
