@@ -2,8 +2,9 @@ import React from 'react'
 import './hero.css'
 import hand_icon from '../assets/hand_icon.png'
 import arrow_icon from '../assets/arrow_icon.png'
+import hero_image from '../assets/hero.png'
 
-export const hero = () => {
+const Hero = () => {
   return (
     <div className="hero">
       <div className="hero-left">
@@ -22,8 +23,10 @@ export const hero = () => {
         </div>
       </div>
       <div className="hero-right">
-        
+        <img src={hero_image} alt="" />
       </div> 
     </div>
   )
 }
+
+export default Hero

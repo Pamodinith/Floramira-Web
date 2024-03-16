@@ -1,9 +1,12 @@
 import React from 'react'
+import Hero from '../components/hero/hero'
 
-export const shop = () => {
+const Shop = () => {
   return (
     <div>
-      <hero/>
+      <Hero/>
     </div>
   )
 }
+
+export default Shop

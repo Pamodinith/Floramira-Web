@@ -1,21 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import './Navbar.css'
 import logo from '../assets/logo.png'
 import cart_icon from '../assets/cart_icon.png'
 import { Link } from 'react-router-dom'
 
-export const Navbar = () => {
-
+const Navbar = () => {
     const [menu,setMenu] = useState("shop")
   return (
-    <div className="Navbar">
+    <div className='navbar'>
         <div className="nav-logo">
             <img src={logo} alt=""/>
             <p>FLORAMIRA</p>
         </div>
         <ul className="nav-menu">
-          <li onClick={()=>{setMenu("shop")}}><Link style={{textDecoration: 'none'}} to='/'>SHOP</Link>{menu==="shop"?<hr/>:<></>}</li>
-          <li onClick={()=>{setMenu("birthday")}}><Link style={{textDecoration: 'none'}} to='/birthday'>BIRTHDAY</Link>{menu==="birthday"?<hr/>:<></>}</li>
+          <li onClick={()=>{setMenu("shop")}}><Link style={{ textDecoration: 'none' }} to='/'>SHOP</Link>{menu==="shop"?<hr/>:<></>}</li>
+          <li onClick={()=>{setMenu("birthday")}}><Link style={{ textDecoration: 'none'} } to='/birthday'>BIRTHDAY</Link>{menu==="birthday"?<hr/>:<></>}</li>
           <li onClick={()=>{setMenu("valentine")}}><Link style={{textDecoration: 'none'}} to='/valentine'>VALENTINE</Link>{menu==="valentine"?<hr/>:<></>}</li>
           <li onClick={()=>{setMenu("anniversary")}}><Link style={{textDecoration: 'none'}} to='/anniversary'>ANNIVERSARY</Link>{menu==="anniversary"?<hr/>:<></>}</li>
         </ul>
@@ -27,3 +26,5 @@ export const Navbar = () => {
     </div> 
   )
 }
+
+export default Navbar
