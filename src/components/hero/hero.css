@@ -1,5 +1,5 @@
 .hero{
-    height: 100vh;
+    height: 80vh;
     background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
     display: flex;
 }
@@ -26,14 +26,10 @@
     font-weight: 700;
 }
 
-.hero-hand-icon{
+.hero-text{
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-.hero-hand-icon img{
-    width: 105px;
 }
 
 .hero-right{
@@ -41,6 +37,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero-right img{
+    max-width: 80%;
+    max-height: 80%;
 }
 
 .hero-latest-btn{
@@ -54,6 +55,6 @@
     margin-top: 30px;
     background-color: #ff4141;
     color: white;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 500;
 }
